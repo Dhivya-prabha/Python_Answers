@@ -1,0 +1,206 @@
+1.What is the output of the following code
+
+  def outerFun(a, b):
+      def innerFun(c, d):
+          return c + d
+      return innerFun(a, b)
+
+  res = outerFun(20, 10)
+  print(res)
+
+  A) 30(Ans)
+  B) Syntax Error
+  C) (20, 10)
+
+2. Which of the following items are present in the function header?
+	A. function name
+	B. function name and parameter list(Ans)
+	C. parameter list
+	D. return value
+
+3.  What is the output of the following code snippet?
+  def func(message, num = 1):
+      print(message * num)
+ 
+  func('Welcome')
+  func('Viewers', 3)
+
+  A. Welcome
+     Viewers
+  B. Welcome
+     ViewersViewersViewers(Ans)
+  C. Welcome
+    Viewers,Viewers,Viewers
+  D. Welcome
+
+4.  Python function always returns a value
+
+    False
+    True(Ans)
+
+5. What is the output of the following display() function call
+  def display(**kwargs):
+      for i in kwargs:
+          print(i)
+  display(emp="Kelly", salary=9000)
+ 
+  A) TypeError
+  B) Kelly
+     9000
+  C) (’emp’, ‘Kelly’)
+     (‘salary’, 9000)
+  D) emp(Ans)
+     salary
+
+6. Select all the correct options to remove “Orange” from the set.
+
+  sampleSet = {"Yellow", "Orange", "Black"}
+
+  A) sampleSet.pop(“Orange”)
+  B) sampleSet.discard(“Orange”)(Ans)
+  C) del sampleSet [“Orange”]
+ 
+7. What is the output of the following union operation
+
+  set1 = {10, 20, 30, 40}
+  set2 = {50, 20, "10", 60}
+
+  set3 = set1.union(set2)
+  print(set3)
+
+  A) {40, 10, 50, 20, 60, 30}
+  B) {40, ’10’, 50, 20, 60, 30}
+  C) {40, 10, ’10’, 50, 20, 60, 30}(Ans)
+  D) SynatxError: Different types cannot be used with sets
+
+8. What is the output of the following code
+
+  sampleSet = {"Yellow", "Orange", "Black"}
+  print(sampleSet[1])
+  A) Yellow
+  B) Syntax Error(Ans)
+  C) Orange 
+
+9. The isdisjoint() method returns True if none of the items are present in both sets, otherwise, it returns False.
+
+ A) True(Ans)
+ B) False
+
+10.  Select the correct way to print Emi’s age.
+
+student = {1: {'name': 'Emi', 'age': '27', 'sex': 'Female'},
+           2: {'name': 'Max', 'age': '22', 'sex': 'Male'}}
+  A) student[0][1]
+  B) student[1][“age”](Ans)
+  C) student[0][“age”]
+
+11.  Select the correct way to access the value of a history subject
+
+  sampleDict = { 
+     "class":{ 
+        "student":{ 
+           "name":"Mike",
+           "marks":{ 
+              "physics":70,
+              "history":80
+           }
+        }
+     }
+  }
+  A) sampleDict[‘class’][‘student’][‘marks’][‘history’](Ans)
+  B) sampleDict[‘class’][‘student’][‘marks’][1]
+  C) sampleDict[‘class’][0][‘marks’][‘history’]
+
+12. What is the output of the following code?
+
+  a={1:"A",2:"B",3:"C"}
+  print(a.get(1,4))
+
+  A) 1
+  B) A(Ans)
+  C) 4
+  D) Invalid syntax for get method
+
+13. Which method should I use to convert String "welcome to the beautiful world of python" to "Welcome To The Beautiful World Of    Python"
+
+  A) capitalize()
+  B) title()(Ans)
+
+14. Select the correct output of the following String operations
+
+  str1 = 'Welcome'
+  print (str1[:6] + ' PYthon')
+  
+  A) Welcome PYthon
+  B) WelcomPYthon
+  C) Welcom PYthon(Ans)
+  D) WelcomePYthon
+
+15. Select the correct output of the following String operations
+
+  str1 = "my isname isisis jameis isis bond";
+  sub = "is";
+  print(str1.count(sub, 4))
+  
+  A) 5
+  B) 6(Ans)
+  C) 7
+
+16.strOne = str("python")
+   strTwo = "python"
+   print(strOne == strTwo)
+   print(strOne is strTwo)
+
+   A) false false
+   B) true true(Ans)
+   C) true false
+   D) false true
+
+17)  What is the output of the following string comparison
+
+  print("John" > "Jhon")
+  print("Emma" < "Emm")
+  
+  A) True(Ans)
+     False
+  B) False
+     False
+
+18) What is the output of the following program
+  r = lambda a : a + 15
+  print(r(10))
+  r = lambda x, y : x * y
+  print(r(12, 4))
+
+  A) 25(Ans)
+     48
+  B) 25
+     20
+  C) 15
+     48
+
+19.  What is the output of the following program 
+
+  starts_with = lambda x: True if x.startswith('P') else False
+  print(starts_with('Python'))
+  starts_with = lambda x: True if x.startswith('P') else False
+  print(starts_with('Java'))
+
+  A) True(Ans)
+     False
+  B) False
+     False
+  C) True
+     True
+20. What will be the output of the following Python code?
+
+  y = 6
+  z = lambda x: x * y
+  print z(8)
+
+  A) 48(Ans)
+  B) 14
+  C) 64
+  D) None of the mentioned
+
+

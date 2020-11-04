@@ -1,0 +1,215 @@
+1. What will be the output of the following Python code?
+	
+	def to_upper(k):
+    	       return k.upper()
+	x = ['ab', 'cd']
+	print(list(map(to_upper, x)))
+
+
+  A) [‘AB’, ‘CD’](Ans)
+  B) [‘ab’, ‘cd’]
+  C) none of the mentioned
+  D) error
+
+2.  What will be the output of the following Python code?
+
+	x = ['ab', 'cd']
+	print(len(list(map(list, x))))
+
+  A) 2(Ans)
+  B) 4
+  C) error
+  D) none of the mentioned
+
+3. What is the output of the following program?
+	from functools import reduce
+	ls = ["mary", "had", "a", "little", "lamb"]
+	word = reduce(lambda x, y: x if len(x) > len(y) else y, ls)
+	print(word)
+  A) mary
+  B) little(Ans)
+  C) lamb
+
+4. What is the output of the following code ?
+	from functools import reduce
+	f = lambda a,b: a if (a > b) else b
+	num = reduce(f, [47,11,42,102,13])
+	print (num)
+
+  A. 47
+  B. 42
+  C. 102(Ans)
+  D. 11
+
+5. Find the answer for the following code.
+
+	from functools import reduce
+	y = reduce(lambda a,b: a+b,[23,21,45,98])
+	print(y)
+
+  A. 98
+  B. 187(Ans)
+  C. 21
+
+6. What is the output of the following program?
+ 	a = [1,2,3,5,7,9]
+	b = [2,3,5,6,7,8]
+	print filter(lambda x: x in a, b)
+
+  A. [2, 3, 5, 7](Ans)
+  B. [1, 6, 8, 9]
+  C. [1, 2, 3, 5, 6, 7, 8, 9]
+
+7. Choose the answer for this following program.
+	y = filter(lambda x: (x>=3), (1,2,3,4))
+	print(list(y))
+
+   A. 4
+   B. [3, 4](Ans)
+   C. 3
+
+8. What is the output of this code
+
+	c = filter(lambda x: (x>=3),map(lambda x:x+x, (1,2,3,4))) 
+	print(list(c))
+
+  A.  [4, 6, 8](Ans)
+  B. [4, 9, 16]
+  C. [3, 5, 7]
+
+9. Choose the answer for the following code
+	cars = ('kia', 'audi', 'bmw')
+	print(list(enumerate(cars, 10)))
+
+  A.[(10, kia), (11, audi), (12, bmw)]
+  B. [(10, 'kia'), (11, 'audi'), (12, 'bmw')](Ans)
+  C.  (10, 'kia') 
+       (11, 'audi') 
+       (12, 'bmw') 
+       
+10. Which of the following is not a type  of inheritance?
+
+   A. Double-level(Ans)
+   B. Multi-level
+   C. Single-level
+  D. Multiple
+
+11. What type of inheritance is illustrated in the following piece of code?
+	class A():
+   	       pass
+	class B():
+	       pass
+	class C(A,B):
+  	       pass
+   A. Multi-level inheritance
+   B. Multiple inheritance(Ans)
+   C. Hierarchical inheritance
+   D. Single-level inheritance
+
+12. What is the output of the following piece of code?
+	class A:
+    	       def __init__(self):
+        	              self.__x = 1
+	class B(A):
+   	        def display(self):
+        	               print(self.__x)
+	def main():
+    	       obj = B()
+    	       obj.display()
+	main()
+
+   A. Error, invalid syntax for object declaration
+   B. Nothing is printed
+   C. 5
+   D. Error, private class member can’t be accessed in a subclass(Ans)
+
+13. What is the output of the following piece of code?
+	class A:
+    	       def __init__(self, x= 1):
+         	              self.x = x
+	class der(A):
+    	        def __init__(self,y = 2):
+        	               super().__init__()
+       	               self.y = y
+	def main():
+    	       obj = der()
+    	       print(obj.x, obj.y)
+	main()
+
+   A. Error, the syntax of the invoking method is wrong
+   B. The program runs fine but nothing is printed
+   C.  1 0
+   D. 1 2(Ans)
+
+14. What is the output of the following piece of code?
+	class A:
+   	       def test1(self):
+                                  print(" test of A called ")
+	class B(A):
+                            def test(self):
+                                   print(" test of B called ")
+	class C(A):
+                           def test(self):
+                                  print(" test of C called ")
+	class D(B,C):
+                           def test2(self):
+                                  print(" test of D called ")        
+	obj=D()
+	obj.test()
+
+   A. test of B called
+        test of C called
+   B. test of C called
+        test of B called
+   C. test of B called(Ans)
+   D. Error, both the classes from which D derives has same method test()
+
+15. Which of the following best describes polymorphism?
+
+  A. Ability of a class to derive members of another class as a part of its own definition  
+  B. Means of bundling instance variables and methods in order to restrict access to certain class members
+  C. Focuses on variables and passing of variables to functions
+  D. Allows for objects of different types and behaviour to be treated as the same general type(Ans)
+
+16.What will be the output of the following Python code?
+
+class Demo:
+     def __init__(self):
+         self.a = 1
+         self.__b = 1
+ 
+     def get(self):
+         return self.__b
+ 
+obj = Demo()
+print(obj.get())
+
+
+A) The program has an error because there isn’t any function to return self.a
+B) The program has an error because b is private and display(self) is returning a private member
+C) The program has an error because b is private and hence can’t be printed
+D) The program runs fine and 1 is printed(Ans)
+
+17. 2. Which of the following is the most suitable definition for encapsulation?
+
+A) Ability of a class to derive members of another class as a part of its own definition
+B) Means of bundling instance variables and methods in order to restrict access to certain class members(Ans)
+C) Focuses on variables and passing of variables to functions
+D) Allows for implementation of elegant software that is well designed and easily modified
+
+18. Write a list comprehension to produce the list: [1, 2, 4, 8, 16……212].
+
+a) [(2**x) for x in range(0, 13)](Ans)
+b) [(x**2) for x in range(1, 13)]
+c) [(2**x) for x in range(1, 13)]
+d) [(x**2) for x in range(0, 13)]
+
+19. What will be the output of the following Python code?
+	x = 'abcd'
+	print(list(map(list, x)))
+
+a) [‘a’, ‘b’, ‘c’, ‘d’]
+b) [‘abcd’]
+c) [[‘a’], [‘b’], [‘c’], [‘d’]](Ans)
+d) none of the mentioned
+

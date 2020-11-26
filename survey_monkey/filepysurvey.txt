@@ -1,0 +1,205 @@
+1. What will be the output of the following Python code if the system date is 30th September 2020?
+
+tday=datetime.date.today()
+print(tday.month())
+
+a) September 
+b) sep
+c) 09
+d) 9(Ans)
+
+2.  State whether true or false.
+
+s = time.time()
+t= time.time()
+s == t
+
+a) True
+b) False(Ans)
+
+3. What will be the output of the following Python code?
+
+import datetime
+d=datetime.date(2020,9,24)
+print(d)
+
+a) Error
+b) 2020-09-24(Ans)
+c) 2020-9-24
+d) 24-9-2020
+
+4. What is the output of the following code?
+
+import time
+import datetime
+
+tday=datetime.date.today()
+print(tday.isoweekday())
+
+a) Wed
+b) Wednesday
+c) 2
+d) 3(Ans)
+
+5. What will be the output of the following Python code?
+
+import time
+import datetime
+
+tday=datetime.date.today()
+tdelta=datetime.timedelta(days=10)
+print(tday+tdelta)
+
+a) 2020-10-10(Ans)
+b) 2020-09-20
+d) Error
+
+6. What will be the output of the following Python code?
+
+import random
+random.choice(2,3,4)
+
+a) An integer other than 2, 3 and 4
+b) Either 2, 3 or 4
+c) Error(Ans)
+d) 3 only
+
+
+7. What will be the output of the following Python code?
+
+random.randrange(0,91,5)
+
+a) 10(Ans)
+b) 18
+c) 79
+d) 95
+
+8. What will be the output of the following Python function
+
+import random
+random.choice('sun')
+
+a) sun
+b) u
+c) either s, u or n(Ans)
+d) error
+
+9. What will be the output of the following Python function
+
+import random
+random.uniform(3,4)
+
+a) Error
+b) Either 3 or 4
+c) Any integer other than 3 and 4
+d) Any decimal value between 3 and 4(Ans)
+
+10. Which of the following command is used to open a file “c:\temp.txt” in read-mode only?
+
+A. infile = open(“c:\temp.txt”, “r”)
+B. infile = open(“c:\\temp.txt”, “r”)(Ans)
+C. infile = open(file = “c:\temp.txt”, “r+”)
+D. infile = open(file = “c:\\temp.txt”, “r+”)
+
+11. In regards to separated value files such as .csv and .tsv, what is the delimiter?
+
+A. Any character such as the comma (,) or tab (\t) that is used to separate the row data
+B. Any character such as the comma (,) or tab (\t) that is used to separate the column data.(Ans)
+C. Anywhere the comma (,) character is used in the file
+D. Delimiters are not used in separated value files 
+
+12. What is the output of the following program
+
+for item in csv_reader:
+    print(item)
+
+A. The full line of the file as a string
+B. The individual value data that is separated by the delimiter
+C. The row data as a list(Ans)
+D.The column data as a list
+
+13. What will be the output of the following code snippet?
+with open("hello.txt", "w") as f:
+    f.write("Hello World how are you today")
+    
+with open('hello.txt', 'r') as f:
+    data = f.readlines()
+    for line in data:
+        words = line.split()
+        print (words)
+    f.close()
+
+A. Runtime Error
+B.  Hello World how are you today
+C. [‘Hello’, ‘World’, ‘how’, ‘are’, ‘you’, ‘today’](Ans)
+D. Hello
+
+14. What will be the output of the following code snippet?
+f = None
+
+for i in range (5):
+    with open("myfile.txt", "w") as f:
+        if i > 2:
+            break
+
+print (f.closed)
+A. Runtime Error
+B. True(Ans)
+C. False
+D. Hello world
+
+15. What will be the output of the following program
+
+for i in range(1, 4):
+     print(i, sheet.cell(row=i, column=2).value)
+
+A) Returns 1, 2  column values
+B) Print out values in column 2(Ans)
+C) Error
+
+16. What will be the output of this code?
+
+import openpyxl  
+path = "C:\\Users\\Admin\\Desktop\\demo.xlsx"
+wb= openpyxl.load_workbook(path) 
+sheet1= wb.active 
+print(sheet1.max_column) 
+
+A) Returns the last column value
+B) Returns the total Number of columns(Ans)
+C) Returns the Max value of the sheet 
+
+17.  What will be the output of the following Python code?
+
+import openpyxl
+excel_file = openpyxl.load_workbook('records.xlsx')
+print(excel_file.sheetnames)
+
+A) Sheet Names(Ans)
+B) ExcelBook Name
+C) Colukn names
+
+18. What is the output formate of following code?
+
+import json
+with open('path_to_file/person.json') as f:
+  data = json.load(f)
+print(data)
+
+A) List 
+B) Dictionary (Ans)
+C)Tuple
+
+19. Which of the following statements are correct regarding the file access modes?
+
+A. ‘r+’ opens a file for both reading and writing. File object points to its beginning.(Ans)
+B. ‘w+’ opens a file for both writing and reading. Overwrites the existing file if it exists and creates a new one if it does not exist.(Ans)
+C. ‘wb’ opens a file for reading and writing in binary format. Overwrites the file if it exists and creates a new one if it does not exist.
+D. ‘a’ opens a file for appending. The file pointer is at the end of the file if the file exists.(Ans)
+
+20. 7. What is the syntax of remove() a file?
+
+a) remove(file_name)(Ans)
+b) remove(new_file_name, current_file_name,)
+c) remove(() , file_name))
+d) none of the mentioned
